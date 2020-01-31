@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      refresh {{dis ? 'disabled' : 'enabled'}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-refresher [disabled]="dis" (ionRefresh)="refreshAppointments($event)" slot="fixed">
+    <ion-refresher-content pullingIcon=null refreshingSpinner=null>
+    </ion-refresher-content>
+  </ion-refresher>
+  <ul class="list" style="max-height: 250px;overflow: auto;">
+    <li>Some list 1</li>
+    <li>Some list 2</li>
+    <li>Some list 3</li>
+    <li>Some list 4</li>
+    <li>Some list 5</li>
+    <li>Some list 6</li>
+    <li>Some list 7</li>
+    <li>Some list 8</li>
+    <li>Some list 9</li>
+    <li>Some list 10</li>
+    <li>Some list 11</li>
+    <li>Some list 12</li>
+    <li>Some list 13</li>
+    <li>Some list 14</li>
+    <li>Some list 15</li>
+    <li>Some list 16</li>
+    <li>Some list 17</li>
+    <li>Some list 18</li>
+    <li>Some list 19</li>
+    <li>Some list 20</li>
+    <li>Some list 21</li>
+    <li>Some list 36</li>
+    <li>Some list 35</li>
+    <li>Some list 34</li>
+    <li>Some list 33</li>
+    <li>Some list 32</li>
+    <li>Some list 31</li>
+    <li>Some list 30</li>
+    <li>Some list 29</li>
+    <li>Some list 28</li>
+    <li>Some list 27</li>
+    <li>Some list 26</li>
+    <li>Some list 25</li>
+    <li>Some list 24</li>
+    <li>Some list 23</li>
+    <li>Some list 22</li>
+  </ul>
+</ion-content>
